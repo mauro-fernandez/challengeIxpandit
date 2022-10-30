@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
     const onClick = () => {
-       return window.location.href = "https://github.com/mauro-fernandez";
+       return window.location.href = "https://github.com/mauro-fernandez/challengeIxpandit";
     }
 
     return (

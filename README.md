@@ -1,18 +1,22 @@
-# Getting Started with Create React App
+# Challenge para Ixpandit
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este proyecto fue creado por Mauro E. N. Fernandez. Las tecnologías utilizadas fueron:
+JavaScript - React - HTML5 - CSS3
 
-## Available Scripts
+## Primero pasos
 
-In the project directory, you can run:
+Entre en https://github.com/mauro-fernandez/challengeIxpandit. En el boton verde desplegable de "Code", haga click, copie la dirección HTTPS.
+Abra visual studio code, coloque el comando "git clone {texto copiado previamente}"
+Una vez que haya finalizado, ejecute el comando "npm install" para instalar las dependencias del proyecto.
+Por último puede ejecutar los siguientes comandos para levantar el proyecto:
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Corre el proyecto en su versión local
+Abre automáticamente [http://localhost:3000](http://localhost:3000), caso contrario usted puede abrir el navegador y pegar esa url
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Si hace cambios en el código, al guardar la página se recargará automaticamente.
+Si inspecciona el código desde el navegador, podrá ver la consola y los errores que puedan surgir.
 
 ### `npm test`
 
