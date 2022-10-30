@@ -204,3 +204,16 @@ footer {
   align-items: center;
   height: 350px;
 }
+
+.notFound-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 0px 40px 0px;
+}
+
+.notFound-image {
+  background-color: white;
+  height: 200px;
+}

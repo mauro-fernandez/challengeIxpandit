@@ -5,6 +5,7 @@ import SearchBar from './components/SearchBar';
 import Pokedex from './components/Pokedex';
 import Footer from './components/Footer'
 import LoadingSpinner from './components/LoadingSpinner'
+import PageNotFound from './components/PageNotFound';
 import { getApiInfo, getOnePokemonData } from './controllers/api'
 
 function App() {
@@ -34,11 +35,19 @@ function App() {
     getAllPokemon()
   },[])
 
+  // <Pokedex pokemons={filteredPokemons}/>
   return (
     <div className='app-container'>
       <NavBar/>
       <SearchBar find={searchPokemon} setFilteredPokemons={setFilteredPokemons}/>
-      {isLoading ? <LoadingSpinner/> : <Pokedex pokemons={filteredPokemons}/> }
+      {isLoading ?
+      <LoadingSpinner/> :
+      (<div> 
+        {filteredPokemons.length === 0 ?
+        <PageNotFound></PageNotFound> :
+        <Pokedex pokemons={filteredPokemons}/>}
+      </div>) 
+      }
       <Footer/>   </div>
   );
 }
